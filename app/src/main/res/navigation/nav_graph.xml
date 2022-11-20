@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.lodge.iu.DashboardFragment"
+        android:label="" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_addGroupFragment"
+            app:destination="@id/addGroupFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_editGroupFragment"
+            app:destination="@id/editGroupFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_editContactFragment"
+            app:destination="@id/editContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.lodge.iu.LoginFragment"
+        android:label="" >
+        <action
+            android:id="@+id/action_loginFragment_to_singUpFragment"
+            app:destination="@id/singUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_loginHelpFragment"
+            app:destination="@id/loginHelpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singUpFragment"
+        android:name="com.example.lodge.iu.SingUpFragment"
+        android:label="" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.lodge.iu.SplashFragment"
+        android:label="" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.lodge.iu.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/addGroupFragment"
+        android:name="com.example.lodge.iu.grupo.AddGroupFragment"
+        android:label=""
+        tools:layout="@layout/fragment_add_group" />
+    <fragment
+        android:id="@+id/editGroupFragment"
+        android:name="com.example.lodge.iu.grupo.EditGroupFragment"
+        android:label=""
+        tools:layout="@layout/fragment_edit_group" />
+    <fragment
+        android:id="@+id/loginHelpFragment"
+        android:name="com.example.lodge.iu.LoginHelpFragment"
+        android:label=""
+        tools:layout="@layout/fragment_login_help" />
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="com.example.lodge.iu.amigo.AddContactFragment"
+        android:label=""
+        tools:layout="@layout/fragment_add_contact" />
+    <fragment
+        android:id="@+id/editContactFragment"
+        android:name="com.example.lodge.iu.amigo.EditContactFragment"
+        android:label=""
+        tools:layout="@layout/fragment_edit_contact" />
+</navigation>

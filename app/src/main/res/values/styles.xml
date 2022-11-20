@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonStyle" parent="android:style/Widget.Button">
+        <item name="android:background">@color/button_background</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+    <style name="CheckBoxStyle" parent="android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@color/checkbox_background</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="TextViewStyle" parent="android:style/Widget.TextView">
+        <item name="android:textColor">@color/text_color</item>
+
+    </style>
+
+
+    <style name="InInTextInputLayout" >
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="hintTextColor">@color/claro</item>
+        <item name="boxStrokeColor">@color/claro</item>
+        <item name="android:background">@drawable/shape_textinputlayout</item>
+        <item name="boxBackgroundMode">filled</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="errorTextColor">@color/black</item>
+    </style>
+
+    <style name="MyPopupMenu" parent="android:Theme.Holo.Light">
+        <item name="android:popupBackground">@android:color/holo_green_light</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:panelBackground">@android:color/holo_green_light</item>
+        <item name="android:actionBarWidgetTheme">@style/AppTheme</item>
+    </style>
+</resources>

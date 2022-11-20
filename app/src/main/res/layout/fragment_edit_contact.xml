@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".iu.amigo.EditContactFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/agencyr"
+        android:text="@string/editar_contacto"
+        android:textSize="@dimen/ts40dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/m10dp"
+        android:background="@color/grisclaro"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/m5dp"
+            android:layout_marginRight="@dimen/m5dp"
+            android:layout_marginBottom="@dimen/m10dp"
+            android:hint="@string/contacto"
+
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/ts20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/m10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="@dimen/m10dp"
+        android:background="@color/grisclaro">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/m5dp"
+            android:layout_marginRight="@dimen/m5dp"
+            android:layout_marginBottom="@dimen/m10dp"
+            android:hint="@string/nombre_para_el_contacto"
+
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            app:errorEnabled="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEditarContacto"
+        android:layout_width="252dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:fontFamily="sans-serif"
+        android:text="@string/editar"
+        android:textColor="@color/grisclaro"
+        android:textSize="@dimen/ts20dp" />
+
+</LinearLayout>

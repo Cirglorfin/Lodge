@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/p20dp"
+    tools:context=".iu.LoginFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/agencyr"
+        android:text="@string/iniciar_sesi_n"
+        android:textSize="@dimen/ts40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/m10dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/m10dp"
+            android:background="@color/grisclaro">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/m5dp"
+                android:layout_marginRight="@dimen/m5dp"
+                android:layout_marginBottom="@dimen/m10dp"
+                android:hint="@string/usuario_o_correo_electr_nico"
+
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/ts20dp"
+                app:errorEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/m10dp"
+        android:layout_marginTop="@dimen/mimg20dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/m10dp"
+            android:background="@color/grisclaro"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/m5dp"
+                android:layout_marginRight="@dimen/m5dp"
+                android:layout_marginBottom="@dimen/m10dp"
+                android:hint="@string/contrase_a"
+                android:inputType="textPassword"
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/m10dp"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/cbxRecordar"
+            style="@style/CheckBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mimg20dp"
+            android:layout_weight="0.5"
+            android:text="@string/recordar"
+            android:textSize="17dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnforgotpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@color/window_background"
+            android:fontFamily="sans-serif-black"
+            android:minHeight="@dimen/min48dp"
+
+            android:text="@string/olvid_la_contrase_a"
+
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/m10dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/entrar"
+        android:textColor="@color/grisclaro"
+        android:textSize="@dimen/ts20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/m5dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/no_tienes_una_cuenta"
+            android:textColor="@color/grisclaro"
+            android:textSize="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="@color/window_background"
+            android:fontFamily="sans-serif-black"
+            android:minHeight="@dimen/min48dp"
+
+            android:text="@string/reg_strate"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+</LinearLayout>

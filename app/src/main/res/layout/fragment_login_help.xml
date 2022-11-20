@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".iu.LoginHelpFragment">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin3"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginLeft="@dimen/m36dp"
+        android:layout_marginTop="@dimen/m10dp"
+        android:layout_marginRight="@dimen/m36dp"
+        android:layout_marginBottom="280dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/enviar"
+        android:textColor="@color/grisclaro"
+        android:textSize="20dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/m36dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="@dimen/m36dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/glEnd"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/correo_electr_nico"
+            android:textSize="@dimen/ts20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/agencyr"
+        android:text="@string/recuperar_cuenta"
+        android:textSize="@dimen/ts40dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="213dp"
+        android:layout_height="114dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/introduce_tu_correo_electr_nico_para_cambiar_la_contrase_a"
+        android:textAlignment="center"
+        android:textColor="@color/grisclaro"
+        android:textSize="@dimen/ts20dp" />
+</FrameLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tvAppNameMarginTop">100dp</dimen>
+    <dimen name="min48dp">48dp</dimen>
+    <dimen name="ts80dp">80dp</dimen>
+    <dimen name="mimg20dp">20dp</dimen>
+    <dimen name="m24dp">24dp</dimen>
+    <dimen name="ts20dp">20dp</dimen>
+    <dimen name="ts40dp">40dp</dimen>
+    <dimen name="m36dp">36dp</dimen>
+    <dimen name="m10dp">10dp</dimen>
+    <dimen name="p20dp">20dp</dimen>
+    <dimen name="m5dp">5dp</dimen>
+</resources>

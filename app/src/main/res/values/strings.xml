@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Lodge</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="AboutUsName" translatable="false">Ciro León Espinosa Avilés</string>
+    <string name="AboutUsSubTiTle">Estudiante</string>
+    <string name="AboutUsBrief" translatable="false">cironidas@gmail.com</string>
+    <string name="AboutUsGithub" translatable="false">https://github.com/Cirglorfin</string>
+    <string name="aboutus">Sobre nosotros...</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="confirmar_contrase_a">Confirmar contraseña</string>
+    <string name="crear">Crear</string>
+    <string name="correo">Correo</string>
+    <string name="recordar_contrase_a">Recordar contraseña</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="usuario">Usuario</string>
+    <string name="enviar">Enviar</string>
+    <string name="correo_electr_nico">"Correo "</string>
+    <string name="recuperar_cuenta">Recuperar cuenta</string>
+    <string name="introduce_tu_correo_electr_nico_para_cambiar_la_contrase_a">Introduce tu correo electrónico para cambiar la contraseña</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+    <string name="usuario_o_correo_electr_nico">Usuario o correo electrónico</string>
+    <string name="recordar">Recordar</string>
+    <string name="olvid_la_contrase_a">¿Olvidó la contraseña?</string>
+    <string name="entrar">Entrar</string>
+    <string name="no_tienes_una_cuenta">¿No tienes una cuenta? </string>
+    <string name="reg_strate">Regístrate</string>
+    <string name="editar_grupo">Editar grupo</string>
+    <string name="aplicar_cambios">Aplicar cambios</string>
+    <string name="datos_separados_por_quot_quot">* Datos separados por \";\"</string>
+    <string name="nombre_del_grupo">Nombre del grupo</string>
+    <string name="administradores">Administradores *</string>
+    <string name="miembros">Miembros *</string>
+    <string name="descripci_n">Descripción</string>
+    <string name="etiquetas">Etiquetas *</string>
+    <string name="contacto">Contacto</string>
+    <string name="nombre_para_el_contacto">Nombre para el contacto</string>
+    <string name="editar">Editar</string>
+    <string name="editar_contacto">Editar contacto</string>
+    <string name="a_adir_grupo">Añadir grupo</string>
+    <string name="crear_grupo">Crear grupo</string>
+    <string name="a_adir">Añadir</string>
+    <string name="a_adir_contacto">Añadir contacto</string>
+</resources>
