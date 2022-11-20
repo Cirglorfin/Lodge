@@ -6,6 +6,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style='style="@style/ButtonStyle"'
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
@@ -15,15 +16,14 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCrearGrupo"
+        style="@style/ButtonStyle"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginStart="@dimen/fab_margin"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="@dimen/fab_margin"
-        android:fontFamily="sans-serif"
         android:text="@string/crear_grupo"
-        android:textColor="@color/grisclaro"
         android:textSize="@dimen/ts20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
@@ -31,12 +31,12 @@
 
     <TextView
         android:id="@+id/textView4"
+        style="@style/TextViewStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|start"
         android:fontFamily="sans-serif"
         android:text="@string/datos_separados_por_quot_quot"
-        android:textColor="@color/grisclaro"
         android:textSize="17dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
@@ -78,8 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-       >
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -107,8 +106,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -137,8 +135,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-   >
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -167,8 +164,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"

@@ -3,7 +3,8 @@
 
     <style name="ButtonStyle" parent="android:style/Widget.Button">
         <item name="android:background">@color/button_background</item>
-        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:textColor">@color/grisclaro</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
     <style name="CheckBoxStyle" parent="android:style/Widget.CompoundButton.CheckBox">
         <item name="android:background">@color/checkbox_background</item>
@@ -11,6 +12,7 @@
     </style>
     <style name="TextViewStyle" parent="android:style/Widget.TextView">
         <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">sans-serif</item>
 
     </style>
 

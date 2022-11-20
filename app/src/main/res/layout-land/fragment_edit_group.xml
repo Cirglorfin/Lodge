@@ -14,7 +14,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCrearGrupo"
-        style="@style/ButtonStyle"
+
         android:layout_width="237dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
