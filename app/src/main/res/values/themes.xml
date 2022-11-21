@@ -6,6 +6,7 @@
         <item name="android:buttonStyle">@style/ButtonStyle</item>
         <item name="android:checkboxStyle">@style/CheckBoxStyle</item>
         <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="android:statusBarColor">@color/window_background</item>
 
     </style>
 

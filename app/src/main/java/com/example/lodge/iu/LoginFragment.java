@@ -1,5 +1,6 @@
 package com.example.lodge.iu;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,11 +19,22 @@ public class LoginFragment extends Fragment {
     private FragmentLoginBinding binding;
 
     @Override
+    public void onStart() {
+        super.onStart();
+        MainActivity mainActivity = (MainActivity) getActivity();
+
+        mainActivity.Visible();
+        mainActivity.Flecha();
+        mainActivity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
+
+    }
+
+    @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-         binding = FragmentLoginBinding.inflate(inflater, container, false);
+      binding = FragmentLoginBinding.inflate(inflater, container, false);
         binding.btnLogin.setOnClickListener(view ->
                 NavHostFragment.findNavController(this).navigate(R.id.dashboardFragment));
 

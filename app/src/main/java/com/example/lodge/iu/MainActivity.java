@@ -15,6 +15,7 @@ import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -22,6 +23,8 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.view.Menu;
 import android.view.MenuItem;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+       // AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -50,12 +53,13 @@ public class MainActivity extends AppCompatActivity {
     public void Visible(){
 
         binding.toolbar.setVisibility(View.VISIBLE);
+
     }
     public void Gone(){
 
         binding.toolbar.setVisibility(View.GONE);}
     public void Flecha(){
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(false);
 
         //getSupportActionBar().setHomeButtonEnabled(false);
     }

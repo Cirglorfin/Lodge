@@ -49,4 +49,6 @@
     <string name="crear_grupo">Create group</string>
     <string name="a_adir">Add</string>
     <string name="a_adir_contacto">Add contact</string>
+    <string name="publico">Public</string>
+    <string name="privado">Private</string>
 </resources>

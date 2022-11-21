@@ -9,6 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="@color/grisclaro"
     android:orientation="vertical"
     tools:context=".iu.grupo.EditGroupFragment">
 
@@ -33,11 +34,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|start"
-        android:layout_marginTop="@dimen/fab_margin"
-        android:layout_marginEnd="@dimen/mimg20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="sans-serif"
         android:text="@string/datos_separados_por_quot_quot"
-        android:textColor="@color/grisclaro"
+        android:textColor="@color/black"
         android:textSize="17dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
@@ -103,11 +104,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:baselineAligned="false"
         android:orientation="horizontal"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        android:baselineAligned="false">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -144,7 +145,7 @@
                 android:layout_marginBottom="5dp"
                 android:hint="@string/miembros"
 
-                android:textColorHint="@color/black"
+                android:textColorHint="#757575"
                 android:textSize="20dp"
                 app:errorEnabled="true" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -156,21 +157,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="@color/grisclaro"
         android:orientation="horizontal"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/m10dp"
-            android:layout_marginTop="@dimen/m5dp"
-            android:layout_weight="0.5"
-            android:backgroundTint="@color/white"
-            android:gravity="center|top"
-            android:minHeight="@dimen/min48dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -190,7 +182,17 @@
                 android:textColorHint="@color/black"
                 android:textSize="20dp"
                 app:errorEnabled="true" />
+
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/black"
+            android:gravity="center|top"
+            android:minHeight="@dimen/min48dp" />
 
     </LinearLayout>
 

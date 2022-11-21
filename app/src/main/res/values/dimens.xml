@@ -11,4 +11,5 @@
     <dimen name="m10dp">10dp</dimen>
     <dimen name="p20dp">20dp</dimen>
     <dimen name="m5dp">5dp</dimen>
+    <dimen name="htil70dp">70dp</dimen>
 </resources>

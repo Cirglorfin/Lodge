@@ -53,4 +53,10 @@ FragmentDashboardBinding binding;
         super.onDestroyView();
         binding = null;
     }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+    }
 }

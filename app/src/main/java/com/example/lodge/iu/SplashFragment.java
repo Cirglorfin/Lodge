@@ -33,8 +33,19 @@ public class SplashFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+        MainActivity mainActivity = (MainActivity) getActivity();
+
+        mainActivity.Gone();
+
+
         // Se puede hacer lambda con alt+intro
-        new Handler().postDelayed(() -> NavHostFragment.findNavController(SplashFragment.this).navigate(R.id.loginFragment),WAIT_TIME);
+        //new Handler().postDelayed(() -> NavHostFragment.findNavController(SplashFragment.this).navigate(R.id.loginFragment),WAIT_TIME);
+        new Handler().postDelayed(new Runnable() { // Se puede hacer lambda con alt+intro
+            @Override
+            public void run() {
+                NavHostFragment.findNavController(SplashFragment.this).navigate(R.id.loginFragment);
+            }
+        },WAIT_TIME);
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
@@ -46,13 +57,6 @@ public class SplashFragment extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
-        MainActivity mainActivity = (MainActivity) getActivity();
-
-        mainActivity.Visible();
-        mainActivity.Flecha();
-        mainActivity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
-
-
 
     }
 

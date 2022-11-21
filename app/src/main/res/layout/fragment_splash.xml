@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".iu.SplashFragment"
-  >
+    android:background="@color/black"
+    tools:context=".iu.SplashFragment">
 
     <TextView
         android:id="@+id/textview_second"
@@ -15,13 +15,14 @@
 
         android:layout_marginTop="@dimen/tvAppNameMarginTop"
 
+        android:fontFamily="@font/agencyr"
         android:text="@string/app_name"
-        android:textSize="@dimen/ts80dp" />
+        android:textSize="60dp" />
 
 
     <ImageView
-        android:layout_width="212dp"
-        android:layout_height="179dp"
+        android:layout_width="262dp"
+        android:layout_height="210dp"
         android:layout_gravity="center"
         android:layout_margin="@dimen/mimg20dp"
 

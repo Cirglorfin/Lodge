@@ -32,10 +32,11 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/htil70dp"
             android:layout_gravity="center"
             android:layout_margin="@dimen/m10dp"
-            android:background="@color/grisclaro">
+            android:background="@drawable/shape_lay"
+            app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -43,11 +44,10 @@
                 android:layout_marginLeft="@dimen/m5dp"
                 android:layout_marginRight="@dimen/m5dp"
                 android:layout_marginBottom="@dimen/m10dp"
-                android:hint="@string/usuario_o_correo_electr_nico"
 
-                android:textColorHint="@color/black"
-                android:textSize="@dimen/ts20dp"
-                app:errorEnabled="true" />
+
+                android:hint="@string/usuario_o_correo_electr_nico"
+                android:textSize="@dimen/ts20dp" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
@@ -62,10 +62,10 @@
         <com.google.android.material.textfield.TextInputLayout
 
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/htil70dp"
             android:layout_gravity="center"
             android:layout_margin="@dimen/m10dp"
-            android:background="@color/grisclaro"
+            android:background="@drawable/shape_lay"
             app:endIconMode="password_toggle"
             app:errorEnabled="true">
 
@@ -75,9 +75,9 @@
                 android:layout_marginLeft="@dimen/m5dp"
                 android:layout_marginRight="@dimen/m5dp"
                 android:layout_marginBottom="@dimen/m10dp"
+
                 android:hint="@string/contrase_a"
                 android:inputType="textPassword"
-                android:textColorHint="@color/black"
                 android:textSize="20dp" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
@@ -126,7 +126,6 @@
         android:layout_marginRight="15dp"
         android:fontFamily="sans-serif"
         android:text="@string/entrar"
-        android:textColor="@color/grisclaro"
         android:textSize="@dimen/ts20dp" />
 
     <LinearLayout
@@ -144,7 +143,6 @@
             android:layout_marginEnd="@dimen/m5dp"
             android:fontFamily="sans-serif"
             android:text="@string/no_tienes_una_cuenta"
-            android:textColor="@color/grisclaro"
             android:textSize="16dp" />
 
         <androidx.appcompat.widget.AppCompatButton
